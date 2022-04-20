@@ -56,6 +56,31 @@
                 <default>false</default>
                 <label>Pune</label>
             </value>
+            <value>
+                <fullName>Dallas</fullName>
+                <default>false</default>
+                <label>Dallas</label>
+            </value>
+            <value>
+                <fullName>Denton</fullName>
+                <default>false</default>
+                <label>Denton</label>
+            </value>
+            <value>
+                <fullName>Chicago</fullName>
+                <default>false</default>
+                <label>Chicago</label>
+            </value>
+            <value>
+                <fullName>New York</fullName>
+                <default>false</default>
+                <label>New York</label>
+            </value>
+            <value>
+                <fullName>California</fullName>
+                <default>false</default>
+                <label>California</label>
+            </value>
         </valueSetDefinition>
         <valueSettings>
             <controllingFieldValue>Andhra Pradesh</controllingFieldValue>
