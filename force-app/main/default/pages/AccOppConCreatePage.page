@@ -1,0 +1,30 @@
+<apex:page doctype="html-5.0" controller="AccOppConCreate" sidebar="true">
+    <apex:form >
+    <apex:pageblock >
+    	<apex:pageBlockSection title="Account Info">
+        
+            <apex:inputtext value="{!accName}" label="Account Name" required="true"/> 
+            <apex:inputtext value="{!accNumEmp}" label="Number of Employees" required="true"/> 
+        </apex:pageBlockSection>
+        <apex:pageBlockSection title="Contact Info">
+        
+             <apex:inputtext value="{!conName}" label="Contact Name" required="true"/> 
+        </apex:pageBlockSection>
+        <apex:pageBlockSection title="Opportunity Info">
+        
+             <apex:inputtext value="{!oppName}" label="opportunity Name" required="true"/> 
+            <apex:input type="date" value="{!oppClose}" label="Close Date" required="true"/>
+        </apex:pageBlockSection>
+        <apex:pageblocksection title="Select picklist">
+            <apex:selectList value="{!stage}" label="stage" multiselect="false" size="1"  required="true">
+            <apex:selectOption itemValue="Prospecting" itemLabel="Prospecting"></apex:selectOption>
+            <apex:selectOption itemValue="Qualification" itemLabel="Qualification"></apex:selectOption>
+            </apex:selectList>
+        </apex:pageBlockSection>
+        <apex:pageblockbuttons >
+        <apex:commandButton action="{!saveTheDetails}" value="Save All" />
+        </apex:pageblockbuttons>
+    
+    </apex:pageblock>
+        </apex:form>
+</apex:page>

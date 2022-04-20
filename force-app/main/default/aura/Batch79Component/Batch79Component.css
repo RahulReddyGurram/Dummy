@@ -1,0 +1,9 @@
+.THIS {
+    padding-top:150px;
+    padding-left:150px;
+    color:blue;
+}
+.THIS.new{
+    padding-left:250px;
+    color:red;
+}

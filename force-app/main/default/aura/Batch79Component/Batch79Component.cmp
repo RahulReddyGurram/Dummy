@@ -1,0 +1,19 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="CandName" type="string" />
+     <aura:attribute name="City" type="string" default="Hyderabad"/>
+     <aura:attribute name="Exp" type="Decimal" default="2.0" required="true"/>
+    <aura:handler name="init" value="{!this}" action="{!c.acountdetails}"/>
+    <aura:attribute name="item" type="string[]" default="['sam','ram','jam']"/>
+    <div>
+        Candidate Name= {!v.CandName}<br/>
+        City= {!v.City}<br/>
+        Experience= {!v.Exp}<br/>
+    </div>
+    <div class="new">
+    test class= {!v.CandName}
+    </div>
+    <aura:iteration items="{!v.item}" var="num">
+        Item: {!num}<br/>
+    
+    </aura:iteration>
+</aura:component>

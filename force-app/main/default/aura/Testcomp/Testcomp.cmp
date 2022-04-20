@@ -1,0 +1,19 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="amount" type="string"/>
+    <aura:attribute name="rate" type="string"/>
+    <aura:attribute name="years" type="integer"/>
+    <aura:attribute name="interest" type="integer"/>
+    <aura:handler name="init" value="{!this}" action="{!c.inter}"/> 
+                  
+    <div>
+        amount= {!v.amount} <br/>
+        rate= {!v.rate} <br/>
+        years = {!v.years}<br/>
+        
+    </div>
+    <div>
+             interest = {!v.interest}<br/>
+    </div>
+   <lightning:button variant="brand" label="Compute" title="Brand action" onclick="{!c.handleClick }" />
+    
+</aura:component>
